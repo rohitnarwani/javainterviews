@@ -32,3 +32,30 @@ Generics allow you to write flexible and reusable code by enabling the use of pa
 The Stream API allows for functional-style operations on sequences of elements. Benefits include concise code, parallel processing, and the ability to work with large datasets. An example might be filtering a list of numbers using stream().filter(x -> x > 5).forEach(System.out::println);.
 12.	Explain the concept of a functional interface and how it is related to lambda expressions.
 A functional interface is an interface with a single abstract method. Lambda expressions can be used to provide a concise implementation of that method. For instance, Runnable and Callable are examples of functional interfaces.
+12.	Explain the concept of a functional interface and how it is related to lambda expressions.
+A functional interface is an interface with a single abstract method. Lambda expressions can be used to provide a concise implementation of that method. For instance, Runnable and Callable are examples of functional interfaces.
+13.	Describe the differences between shallow copy and deep copy in Java, and provide scenarios where each is appropriate.
+Shallow copy creates a new object but does not duplicate the content, while deep copy creates a new object and duplicates the content, recursively if needed. Deep copy is appropriate when you want to create a completely independent copy of an object.
+14.	What is the volatile keyword in Java, and how does it differ from other synchronization mechanisms?
+The volatile keyword ensures that a variable is always read from and written to the main memory, preventing thread-specific caching. It is different from other synchronization mechanisms like synchronized as it does not acquire locks.
+15.	Discuss the principles of immutability in Java and how they contribute to concurrent programming.
+Immutability involves creating objects that cannot be changed after creation. It simplifies concurrent programming by eliminating the need for locks, as immutable objects can be safely shared between threads without the risk of modification.
+16.	What are the advantages and disadvantages of using the synchronized keyword in Java for achieving thread safety?
+The synchronized keyword ensures that only one thread can access a critical section of code at a time. Advantages include simplicity, while disadvantages include potential contention and performance overhead.
+17.	Explain the concept of inversion of control (IoC) and how it is implemented in Java frameworks like Spring.
+IoC is a design principle where the control flow of a system is inverted. In Java frameworks like Spring, IoC is achieved through dependency injection, where the framework manages the creation and injection of dependencies.
+18. Describe the more commonly found functional interfaces in the standard library.
+Function. Takes one argument and returns a result
+Consumer. Takes one argument and returns no result
+Supplier. Takes a not argument and returns a result
+Predicate. Takes one argument and returns a boolean
+BiFunction. Takes two arguments and returns a result
+BinaryOperator. It’s like a BiFunction, except it takes two arguments and returns a result, and they are all the same type
+UnaryOperator. It’s like a Function, but it takes a single argument and returns a result of the same type
+19. Explain the difference between the Comparable and Comparator interfaces in Java.
+Comparable: The Comparable interface is used to define a natural ordering for objects of a specific class. It contains a single method, compareTo(), which compares two objects of the same class.
+Comparator: The Comparator interface is used to define a custom ordering for objects of a specific class. It contains a single method, compare(), which compares two objects of the same class. 
+20. What is the difference between fail-fast and fail safe?
+  fail-safe property works with the clone of the underlying collection and thus, it is not affected by any modification in the collection. All the collection classes in java.util package are fail-fast, while the collection classes in java.util.concurrent are fail-safe. Fail-fast iterators throw a ConcurrentModification Exception, while fail-safe iterator never throws such an exception.
+
+
