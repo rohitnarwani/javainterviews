@@ -1,0 +1,34 @@
+Problem Solving:
+
+You encounter an error in your code. How do you debug it? (Explain debugging techniques like using print statements, breakpoints, and logical reasoning)
+How can you optimize your code for better performance? (Discuss code efficiency, avoiding unnecessary loops or calculations)
+What are some good practices for writing clean and maintainable code? (Indentation, proper naming conventions, commenting)
+How can you test your code effectively? (Unit testing, integration testing, user testing)
+Challenge: You're given a complex problem. Explain your thought process and approach to solving it using code.
+
+Technical Questions:
+1.	Explain the differences between the HashMap and ConcurrentHashMap classes.
+HashMap is not thread-safe, while ConcurrentHashMap is. ConcurrentHashMap allows multiple threads to read and write concurrently without blocking, making it suitable for high-concurrency scenarios.
+2.	How does garbage collection work in Java, and what are the different types of garbage collectors?
+Garbage collection is the process of automatically reclaiming memory occupied by objects that are no longer in use. Java has different garbage collectors like Serial, Parallel, CMS (Concurrent Mark-Sweep), and G1 (Garbage First), each with its own characteristics and use cases.
+3.	Can you explain the principles of the SOLID design principles and provide examples of how you've applied them in your projects?
+The SOLID principles (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion) are design principles that promote maintainability, flexibility, and readability in object-oriented systems.
+4.	Describe the principles of microservices architecture and how it differs from monolithic architecture.
+Microservices architecture is an architectural style that structures an application as a collection of small, independent services. Each service represents a specific business capability and can be developed, deployed, and scaled independently. 
+It contrasts with monolithic architecture, where the entire application is developed as a single unit.
+5.	What is the Java Memory Model, and how does it impact multi-threaded programming?
+The Java Memory Model defines how threads interact through memory. Understanding it is crucial for writing correct and efficient concurrent programs, as it provides rules for how threads should view changes made by other threads.
+6.	Explain the difference between checked and unchecked exceptions in Java.
+Checked exceptions are checked at compile-time and must be either caught or declared in the method signature using the throws clause. Unchecked exceptions, on the other hand, are not checked at compile-time, and include RuntimeException and its subclasses.
+7.	Can you discuss the advantages and disadvantages of using an ORM (Object-Relational Mapping) framework like Hibernate?
+ORM frameworks like Hibernate simplify database interaction by mapping Java objects to database tables. Advantages include increased productivity and portability, while disadvantages may include performance overhead and a learning curve.
+8.	Can we have an implementation in Java interface?
+In an interface, we can have a default implementation using the default keyword.
+9.	How does a TreeMap store its key-value pairs?
+It uses a red-black tree.
+10.	Explain the concept of Generics in Java and provide an example of its usage.
+Generics allow you to write flexible and reusable code by enabling the use of parameterized types. For example, in a List<String>, only strings can be added, providing type safety.
+11.	What are the benefits of using the java.util.stream package introduced in Java 8? Could you provide an example of a stream operation?
+The Stream API allows for functional-style operations on sequences of elements. Benefits include concise code, parallel processing, and the ability to work with large datasets. An example might be filtering a list of numbers using stream().filter(x -> x > 5).forEach(System.out::println);.
+12.	Explain the concept of a functional interface and how it is related to lambda expressions.
+A functional interface is an interface with a single abstract method. Lambda expressions can be used to provide a concise implementation of that method. For instance, Runnable and Callable are examples of functional interfaces.
